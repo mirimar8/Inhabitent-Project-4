@@ -36,6 +36,7 @@ plugins/*
 
 themes/*
 !themes/Inhabitant-theme/
+
 themes/Inhabitant-theme/node_modules/
 
 uploads/wp-migrate-db/

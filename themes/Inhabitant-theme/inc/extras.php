@@ -20,3 +20,25 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// custom login for theme
+function childtheme_custom_login() {
+	echo '<style>
+	#login h1 a {
+		background-image:url(' . get_template_directory_uri() . '/project-04-assets/images/logos/inhabitent-logo-text-dark.svg );
+		background-size: 200px;	
+		width: 200px;
+		background-position: bottom;
+		
+	}
+	</style>';
+}
+ 
+add_action('login_head', 'childtheme_custom_login');
+
+function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
+
+

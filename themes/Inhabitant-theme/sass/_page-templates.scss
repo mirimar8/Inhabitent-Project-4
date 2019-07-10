@@ -1,5 +1,70 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.site {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: white;
+    padding: 1rem;
+}
+
+.site-content {
+    background-color: #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+
+    .content-area {
+        flex: 2;
+        background-color: orange;
+    }
+
+    .widget-area {
+        flex: 1;
+        background-color: yellow;
+    }
+}
+
+.site-footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+
+
 
 /* Front page */
+
+.home {
+    .site {
+        max-width: 90%;
+    }
+    
+    .site-header {
+        background-color: red;
+    }
+}
+
+/* about */
+
+.page-id-8 {
+    max-width: 1500px;
+
+    .site {
+       max-width: 1500px;
+
+       .site-header {
+        padding: 0;
+       }
+    } 
+}
+
+
+
+
+
+

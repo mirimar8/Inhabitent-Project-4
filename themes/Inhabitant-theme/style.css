@@ -234,7 +234,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -420,9 +420,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #248A83; }
   a:visited {
-    color: purple; }
+    color: #248A83; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -670,30 +670,55 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .site {
-  max-width: 800px;
   margin: 0 auto; }
 
+.container {
+  width: 1120px; }
+
 .site-header {
-  background-color: white;
-  padding: 1rem; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  padding: 0.5rem 10rem;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  width: 100%; }
+  .site-header .site-branding {
+    width: 50px;
+    height: 30px; }
+  .site-header .main-navigation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .site-header .main-navigation .menu-item {
+      padding: 0 15px;
+      text-transform: uppercase; }
 
 .site-content {
-  background-color: #ccc;
-  padding: 1rem;
-  margin: 1rem 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .site-content .content-area {
     -webkit-box-flex: 2;
         -ms-flex: 2;
-            flex: 2;
-    background-color: orange; }
+            flex: 2; }
   .site-content .widget-area {
     -webkit-box-flex: 1;
         -ms-flex: 1;
-            flex: 1;
-    background-color: yellow; }
+            flex: 1; }
 
 .site-footer {
   background-color: black;
@@ -701,16 +726,68 @@ object {
   padding: 1rem; }
 
 /* Front page */
-.home .site {
-  max-width: 90%; }
-
-.home .site-header {
-  background-color: red; }
+.home {
+  max-width: 1500px; }
+  .home .site {
+    max-width: 1500px;
+    position: relative; }
+  .home .site-header {
+    position: absolute;
+    border-bottom: none; }
+    .home .site-header a {
+      color: white; }
+  .home .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .home .site-content .content-area .entry-header {
+      display: none; }
+      .home .site-content .content-area .entry-header .entry-title {
+        display: none; }
+    .home .site-content .entry-content {
+      margin: 0; }
+  .home .widget-area {
+    display: none; }
 
 /* about */
 .page-id-8 {
   max-width: 1500px; }
   .page-id-8 .site {
-    max-width: 1500px; }
-    .page-id-8 .site .site-header {
-      padding: 0; }
+    max-width: 1500px;
+    position: relative; }
+  .page-id-8 .site-header {
+    position: absolute;
+    border-bottom: none; }
+    .page-id-8 .site-header a {
+      color: white; }
+  .page-id-8 .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0; }
+    .page-id-8 .site-content .entry-header {
+      display: none; }
+    .page-id-8 .site-content .entry-content {
+      margin: 0; }
+      .page-id-8 .site-content .entry-content .hero-image-header {
+        width: 100%;
+        height: 100vh; }
+        .page-id-8 .site-content .entry-content .hero-image-header .entry-title {
+          color: #fff;
+          font-size: 3rem;
+          text-align: center;
+          text-transform: uppercase; }
+    .page-id-8 .site-content h2 {
+      color: #2f1339;
+      text-transform: uppercase;
+      font-size: 2.1rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 30px 400px; }
+    .page-id-8 .site-content p {
+      text-align: left;
+      max-width: 800px;
+      margin: 30px 400px; }
+    .page-id-8 .site-content .widget-area {
+      display: none; }

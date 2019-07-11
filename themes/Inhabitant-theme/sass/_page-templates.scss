@@ -2,29 +2,51 @@
 # Page Templates
 --------------------------------------------------------------*/
 .site {
-    max-width: 800px;
     margin: 0 auto;
 }
 
-.site-header {
-    background-color: white;
-    padding: 1rem;
+.container {
+    width: 1120px;
 }
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    padding: 0.5rem 10rem;
+    border-bottom: 1px solid #e1e1e1;
+    position: fixed;
+    width: 100%;
 
+    .site-branding {
+        width:50px;
+        height:30px;
+    }
+
+    .main-navigation {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        
+        .menu-item {
+            padding: 0 15px;
+            text-transform: uppercase;
+        }
+    }
+}
 .site-content {
-    background-color: #ccc;
-    padding: 1rem;
-    margin: 1rem 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0;
     display: flex;
 
     .content-area {
         flex: 2;
-        background-color: orange;
+        
     }
 
     .widget-area {
         flex: 1;
-        background-color: yellow;
     }
 }
 
@@ -34,33 +56,99 @@
     padding: 1rem;
 }
 
-
-
-
 /* Front page */
 
 .home {
+    max-width: 1500px;
     .site {
-        max-width: 90%;
+        max-width: 1500px;
+        position: relative;
     }
     
     .site-header {
-        background-color: red;
+        position: absolute;
+        border-bottom: none;
+
+        a {
+            color: white;
+        }  
     }
+    .site-content {
+        display: flex;
+        .content-area {
+            .entry-header {
+                display: none;
+                .entry-title {
+                    display: none;
+                }
+            }
+        }
+            .entry-content {
+                margin: 0;
+            }
+        }
+        .widget-area {
+            display: none;        
+        }  
 }
 
 /* about */
 
 .page-id-8 {
     max-width: 1500px;
-
     .site {
        max-width: 1500px;
+       position: relative;
 
-       .site-header {
-        padding: 0;
-       }
     } 
+    .site-header {
+        position: absolute;
+        border-bottom: none;
+        a {
+            color: white;
+        }
+    }
+    .site-content {
+        display: flex;
+        width: 100%;
+        padding: 0;
+
+        .entry-header {
+            display: none;
+        }
+        .entry-content {
+            margin: 0;
+            .hero-image-header {
+                width:100%;
+                height:100vh;
+                .entry-title {
+                    color: #fff;
+                    font-size: 3rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        h2 {
+            color: #2f1339;
+            text-transform: uppercase;
+            font-size: 2.1rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 30px 400px;
+        }
+        
+        p {
+            text-align: left;
+            max-width: 800px;
+            margin: 30px 400px;
+        }
+    
+        .widget-area {
+            display: none;        
+        }
+    }
+    
 }
 
 

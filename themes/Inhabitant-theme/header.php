@@ -21,9 +21,9 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header container" role="banner">
 				<div class="site-branding">
-					<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="inhabitent  white logo tent" width="50" hight="50">
+				<a href="//localhost:3000/Inhabitant-Project4/"><img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="inhabitent logo tent"></a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
@@ -34,8 +34,8 @@
 				</nav><!-- #site-navigation -->
 				
 			</header><!-- #masthead -->
-			<?php if ( has_post_thumbnail() ) {
+			 <?php if ( has_post_thumbnail() ) {
 					the_post_thumbnail(); 
-					} ?>
+			} ?>
 			
-			<div id="content" class="site-content">
+			<div id="content" class="site-content container">

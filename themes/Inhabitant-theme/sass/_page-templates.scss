@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 .site {
     margin: 0 auto;
+   
 }
 
 .container {
@@ -17,6 +18,7 @@
     border-bottom: 1px solid #e1e1e1;
     position: fixed;
     width: 100%;
+    
 
     .site-branding {
         width:50px;
@@ -27,6 +29,10 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        fieldset {
+            border: none;
+            padding: 0;
+        }
         
         .menu-item {
             padding: 0 15px;
@@ -41,12 +47,64 @@
     display: flex;
 
     .content-area {
-        flex: 2;
+        flex: 3;
+        // padding-top: 3rem;
+        // padding-right: 3rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+        input[type=submit] {
+            background-color: $color__link;
+            box-shadow: none;
+            border-radius: 0;
+            color: $color__background-body;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            text-shadow: none;
+        }
+
+        .entry-header {
+            // position: relative;
+        
+            .entry-title{
+            //     position: absolute;
+            //     top: 10px;
+            //     background-color: $color__link;
+            //     border: 1px;
+            //     color: $color__background-body;
+            }
+
+            img {
+                width: 1400px;
+            }
+        }
+
         
     }
 
     .widget-area {
         flex: 1;
+        border-left: 1px solid #e1e1e1;
+        padding-top: 2rem;
+        padding-left: 3rem;
+
+        .widget {
+            .contact-meta {
+                margin-bottom: 0.5rem;
+                i {
+                    margin-right: 0.7rem;
+                    font-size: 13px;
+                   
+                }
+            }
+            
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 }
 
@@ -57,44 +115,12 @@
 }
 
 /* Front page */
-
-.home {
-    max-width: 1500px;
-    .site {
-        max-width: 1500px;
-        position: relative;
-    }
-    
-    .site-header {
-        position: absolute;
-        border-bottom: none;
-
-        a {
-            color: white;
-        }  
-    }
-    .site-content {
-        display: flex;
-        .content-area {
-            .entry-header {
-                display: none;
-                .entry-title {
-                    display: none;
-                }
-            }
-        }
-            .entry-content {
-                margin: 0;
-            }
-        }
-        .widget-area {
-            display: none;        
-        }  
-}
-
 /* about */
 
-.page-id-8 {
+.about-page, .front-page {
+    .site-header {
+        z-index: 3;
+    }
     max-width: 1500px;
     .site {
        max-width: 1500px;
@@ -108,6 +134,22 @@
             color: white;
         }
     }
+
+    .front-page {
+        .entry-content {
+            position: relative; 
+
+            .entry-title {
+                visibility: hidden;
+            }
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
     .site-content {
         display: flex;
         width: 100%;
@@ -116,6 +158,7 @@
         .entry-header {
             display: none;
         }
+
         .entry-content {
             margin: 0;
             .hero-image-header {

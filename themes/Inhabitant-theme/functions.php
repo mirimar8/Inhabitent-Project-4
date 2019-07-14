@@ -103,7 +103,7 @@ add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 //enqueues our external font awesome stylesheet
 function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.7/css/all.css'); 
+	wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'); 
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 

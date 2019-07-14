@@ -7,7 +7,7 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main front-page" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -17,12 +17,36 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
+			
+			
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content' ); ?>
+				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; ?>
+
+			<h2><?php echo CFS()->get( 'journal_title' ); ?></h2>
+			<?php
+				$args = array(
+				'order' => 'DSC',
+				'posts_per_page' => 3,
+				'post_type' => 'post',
+				);
+			?> 
+
+			<?php $query = new WP_Query( $args ); ?>
+			<?php if ( $query->have_posts() ) : ?>
+   				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
+      				<h1><?php the_title(); ?></h1>
+    				 	<?php the_content(); ?>
+   				<?php endwhile; ?>
+   				<?php the_posts_navigation(); ?>
+				<?php wp_reset_postdata(); ?>
+				  
+			<?php else : ?>
+      			<h2>Nothing found!</h2>
+			<?php endif; ?>
+
 
 			<?php the_posts_navigation(); ?>
 
@@ -31,6 +55,8 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+			
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

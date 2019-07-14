@@ -41,4 +41,15 @@ function the_url( $url ) {
 }
 add_filter( 'login_headerurl', 'the_url' );
 
+add_filter( 'body_class', 'custom_page_class');
+function custom_page_class( $classes ) {
+	if ( is_page('About')) {
+		$classes[] = 'about-page';
+	}
+	if ( is_page('Front Page')) {
+		$classes[] = 'front-page';
+	}
+ 
+	return $classes; 
+}
 

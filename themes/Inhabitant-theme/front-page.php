@@ -18,12 +18,13 @@ get_header(); ?>
 			<?php endif; ?>
 
 			
-			
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; ?>
+
+			<h2><?php echo CFS()->get( 'shop_title' ); ?></h2>
 
 			<h2><?php echo CFS()->get( 'journal_title' ); ?></h2>
 			<?php

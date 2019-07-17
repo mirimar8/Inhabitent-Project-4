@@ -816,3 +816,6 @@ object {
       margin: 30px 400px; }
     .about-page .site-content .widget-area, .front-page .site-content .widget-area {
       display: none; }
+
+.archive .content-area .page-title {
+  text-align: center; }

@@ -41,7 +41,7 @@ function inhabitent_cpt_product() {
 	);
 	$args = array(
 		'label'                 => __( 'Product', 'text_domain' ),
-		'description'           => __( 'Products for the Inhabitent shop', 'text_domain' ),
+		'description'           => __( '', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail' ),
 		'taxonomies'            => array( 'product_type' ),

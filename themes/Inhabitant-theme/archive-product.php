@@ -13,44 +13,51 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+				<h1 class="page-title">SHOP STUFF</h1>
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
+			<?php $terms = get_terms( array(
+    			'taxonomy' => 'product_type',
+    			'hide_empty' => false,
+				) );
+				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+					$count = count( $terms );
+					$i = 0;
+					$term_list = '<p class="my_term-archive">';
+					foreach ( $terms as $term ) {
+						$i++;
+						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name . '</a>';
+
+					}
+					echo $term_list;
+				}
+				
+			?>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<header class="entry-header">
+					<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'large' ); ?>
+					<?php endif; ?>
+
+					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+
+					<h2><?php echo CFS()->get( 'price' ); ?></h2>
+
+				</header><!-- .entry-header -->
+
+
+			</article><!-- #post-## -->
 
 			<?php endwhile; ?>
-
-			<h2><?php echo CFS()->get( 'shop_title' ); ?></h2>
-			<?php
-				$args = array(
-				'order' => 'ASC',
-				'posts_per_page' => 16,
-				'post_type' => 'product',
-				);
-			?> 
-
-			<?php $query = new WP_Query( $args ); ?>
-			<?php if ( $query->have_posts() ) : ?>
-   				<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-      				<h1><?php the_title(); ?></h1>
-    				 	<?php the_content(); ?>
-   				<?php endwhile; ?>
-   				<?php the_posts_navigation(); ?>
-				<?php wp_reset_postdata(); ?>
-				  
-			<?php else : ?>
-      			<h2>Nothing found!</h2>
-			<?php endif; ?>
-
-
+			
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>

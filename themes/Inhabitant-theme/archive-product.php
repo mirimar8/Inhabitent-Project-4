@@ -39,19 +39,19 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<div class="products-grid">
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				
+
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 				<header class="entry-header">
-				
 					
 						<?php if ( has_post_thumbnail() ) : ?>
 						<a href="<?php the_permalink(); ?>" >
 							<?php the_post_thumbnail('large' ); ?></a>
 						<?php endif; ?>
-						
+
 						<div class="product-info">	
 						<?php the_title( sprintf( '<p class="entry-title">', esc_url( get_permalink() ) ), '</p>' ); ?>
 						<p><?php echo CFS()->get( 'price' ); ?></p>
@@ -61,9 +61,10 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 			
 			</article><!-- #post-## -->
-			
+		
 
 			<?php endwhile; ?>
+		
 			</div>	
 			
 			<?php the_posts_navigation(); ?>

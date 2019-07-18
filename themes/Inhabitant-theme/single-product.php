@@ -25,8 +25,15 @@ get_header(); ?>
 					<div class="entry-content">
 										
 							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-							<p><?php echo CFS()->get( 'price' ); ?></p>
+							<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 							<?php the_content(); ?>
+							<div class="social-buttons">
+								<button class="like"><i class="fab fa-facebook-f"></i>LIKE</button>
+								<button class="tweet"><i class="fab fa-twitter"></i>TWEET</button>
+								<button class="pin"><i class="fab fa-pinterest"></i>PIN</button>
+
+							</div>
+
 						
 					</div><!-- .entry-content -->
 
@@ -35,19 +42,10 @@ get_header(); ?>
 					</footer><!-- .entry-footer -->
 				</article><!-- #post-## -->
 
-			
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

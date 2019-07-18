@@ -22,17 +22,20 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
+			<div class="products-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
-						<?php endif; ?>
+						<a href="<?php the_permalink(); ?>" >
+							<?php the_post_thumbnail('large' ); ?>
+						<?php endif; ?></a>
 
-						<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-						<h2><?php echo CFS()->get( 'price' ); ?></h2>
+						<div class="product-info">
+						<?php the_title( sprintf( '<p class="entry-title">', esc_url( get_permalink() ) ), '</p>' ); ?>
+						<p><?php echo CFS()->get( 'price' ); ?></p>
+						</div>
 
 					</header><!-- .entry-header -->
 
@@ -40,6 +43,7 @@ get_header(); ?>
 				</article><!-- #post-## -->
 
 			<?php endwhile; ?>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 
@@ -52,5 +56,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

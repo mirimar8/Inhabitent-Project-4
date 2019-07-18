@@ -25,7 +25,7 @@ add_filter( 'body_class', 'red_starter_body_classes' );
 function childtheme_custom_login() {
 	echo '<style>
 	#login h1 a {
-		background-image:url(' . get_template_directory_uri() . '/project-04-assets/images/logos/inhabitent-logo-text-dark.svg );
+		background-image:url(' . get_template_directory_uri() . '/images/logos/inhabitent-logo-text-dark.svg );
 		background-size: 200px;	
 		width: 200px;
 		background-position: bottom;

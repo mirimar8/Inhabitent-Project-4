@@ -18,9 +18,7 @@ get_header(); ?>
 					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
-
-			<?php $terms = get_terms( array(
+				<?php $terms = get_terms( array(
     			'taxonomy' => 'product_type',
     			'hide_empty' => false,
 				) );
@@ -31,32 +29,42 @@ get_header(); ?>
 					foreach ( $terms as $term ) {
 						$i++;
 						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name . '</a>';
-
 					}
 					echo $term_list;
 				}
-				
 			?>
+			</header><!-- .page-header -->
+
+			
 
 			<?php /* Start the Loop */ ?>
+			<div class="products-grid">
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
 				<header class="entry-header">
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'large' ); ?>
-					<?php endif; ?>
-
-					<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-					<h2><?php echo CFS()->get( 'price' ); ?></h2>
-
+				
+					
+						<?php if ( has_post_thumbnail() ) : ?>
+						<a href="<?php the_permalink(); ?>" >
+							<?php the_post_thumbnail('large' ); ?></a>
+						<?php endif; ?>
+						
+						<div class="product-info">	
+						<?php the_title( sprintf( '<p class="entry-title">', esc_url( get_permalink() ) ), '</p>' ); ?>
+						<p><?php echo CFS()->get( 'price' ); ?></p>
+						</div>
+				
+				
 				</header><!-- .entry-header -->
-
-
+			
 			</article><!-- #post-## -->
+			
 
 			<?php endwhile; ?>
+			</div>	
 			
 			<?php the_posts_navigation(); ?>
 
@@ -69,5 +77,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

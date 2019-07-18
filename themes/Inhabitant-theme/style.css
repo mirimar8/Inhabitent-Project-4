@@ -43,6 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url(../../fonts/Merriweather/style.css);
+@import url(../../fonts/Novecento/style.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -706,7 +708,8 @@ object {
     display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+    font-family: Novecento Sans Web,sans-serif; }
     .site-header .main-navigation fieldset {
       border: none;
       padding: 0; }
@@ -736,8 +739,6 @@ object {
       padding: 0.75rem 1.5rem;
       font-size: 0.9rem;
       text-shadow: none; }
-    .site-content .content-area .entry-header img {
-      width: 1400px; }
   .site-content .widget-area {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -760,6 +761,16 @@ object {
   color: white;
   padding: 1rem;
   text-align: center; }
+  .site-footer #footer-sidebar1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 /* Front page */
 /* about */
@@ -817,5 +828,44 @@ object {
     .about-page .site-content .widget-area, .front-page .site-content .widget-area {
       display: none; }
 
-.archive .content-area .page-title {
-  text-align: center; }
+.archive .content-area .page-header {
+  text-align: center;
+  font-weight: 350;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border-bottom: 1px dashed #c8c8c8; }
+  .archive .content-area .page-header .my_term-archive {
+    margin-bottom: 50px;
+    font-family: Novecento Sans Web,sans-serif; }
+    .archive .content-area .page-header .my_term-archive a {
+      margin: 20px;
+      text-transform: uppercase; }
+
+.archive .content-area .products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1.5rem; }
+  .archive .content-area .products-grid .entry-header {
+    border: 1px solid #e1e1e1;
+    height: 310px; }
+    .archive .content-area .products-grid .entry-header img {
+      height: 250px; }
+    .archive .content-area .products-grid .entry-header .product-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 1rem; }
+
+.tax-product_type .content-area .products-grid {
+  grid-template-rows: none; }
+
+.single-product .type-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }

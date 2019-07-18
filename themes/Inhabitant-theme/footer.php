@@ -10,8 +10,15 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="footer-info">
-					
+				<div id="footer-sidebar" class="secondary">
+					<div id="footer-sidebar1">
+					<?php
+					if(is_active_sidebar('footer-sidebar-1')){
+					dynamic_sidebar('footer-sidebar-1');
+					}
+					?>
+					</div>
+				</div>
 				<div class="site-info">
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'COPYRIGHT © 2019 INHABITENT' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->

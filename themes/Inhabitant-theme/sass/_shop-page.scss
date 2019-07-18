@@ -1,8 +1,72 @@
 .archive {
     .content-area {
-        .page-title {
+        .page-header{
            text-align: center;
+        //    font-size: 1.2rem;
+           font-weight: 350;
+           margin-bottom: 50px;
+           margin-top: 30px;
+           border-bottom: 1px dashed #c8c8c8;
+
+           .my_term-archive {
+               margin-bottom: 50px;
+               font-family: Novecento Sans Web,sans-serif;
+               a {
+                   margin: 20px;
+                   text-transform: uppercase;
+               }
+           }
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 1.5rem;
+
+            .entry-header {
+                border: 1px solid #e1e1e1;
+                height: 310px;
+                img {
+                    height: 250px;
+                    // max-width: 300px;
+                   
+
+                }
+                .product-info {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    font-size: 1rem;
+
+                    // p {
+                    //     content: leader(dotted) target-counter(attr(href), page);
+                    // }
+                    .entry-title {
+                    }
+                }
+                
+            }
         }
     }
     
+}
+
+
+.tax-product_type {
+    .content-area{
+        .products-grid {
+            grid-template-rows: none;
+            }
+    }
+    
+}
+
+.single-product {
+    .type-product {
+        display: flex;
+    }
+   
+
 }

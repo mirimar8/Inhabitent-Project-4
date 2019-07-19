@@ -239,7 +239,7 @@ textarea {
   font-family: "Merriweather Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -250,6 +250,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   color: black; }
+
+h3 {
+  font-size: 1.8rem; }
 
 /* Copy */
 p {
@@ -730,7 +733,10 @@ object {
             flex: 3; }
     .site-content .content-area h2 {
       font-size: 2rem; }
-    .site-content .content-area input[type=submit] {
+    .site-content .content-area .wpcf7-form label {
+      font-family: Novecento Sans Web,sans-serif;
+      text-transform: uppercase; }
+    .site-content .content-area .wpcf7-form input[type=submit] {
       background-color: #248A83;
       -webkit-box-shadow: none;
               box-shadow: none;
@@ -738,7 +744,32 @@ object {
       color: #fff;
       padding: 0.75rem 1.5rem;
       font-size: 0.9rem;
-      text-shadow: none; }
+      text-shadow: none;
+      font-family: Novecento Sans Web,sans-serif;
+      text-transform: uppercase; }
+    .site-content .content-area .wpcf7-form input {
+      background-color: #eee; }
+    .site-content .content-area .wpcf7-form textarea {
+      background-color: #eee;
+      width: 93%; }
+    .site-content .content-area .buttons-wrapper {
+      margin: 1rem 0; }
+      .site-content .content-area .buttons-wrapper .link-button {
+        border: 1px solid #000;
+        color: #000;
+        border-radius: 0;
+        background-color: transparent;
+        padding: 13px 30px;
+        font-family: Novecento Sans Web,sans-serif;
+        font-size: 0.9rem; }
+        .site-content .content-area .buttons-wrapper .link-button i {
+          padding-right: 10px; }
+      .site-content .content-area .buttons-wrapper .link-button:hover {
+        background-color: #248A83;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-shadow: none;
+        color: #fff; }
   .site-content .widget-area {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -819,11 +850,11 @@ object {
       text-transform: uppercase;
       font-size: 2.1rem;
       text-align: center;
-      max-width: 800px;
+      max-width: 1120px;
       margin: 30px 400px; }
     .about-page .site-content p, .front-page .site-content p {
       text-align: left;
-      max-width: 800px;
+      max-width: 1120px;
       margin: 30px 400px; }
     .about-page .site-content .widget-area, .front-page .site-content .widget-area {
       display: none; }
@@ -853,7 +884,9 @@ object {
     border: 1px solid #e1e1e1;
     height: 310px; }
     .archive .content-area .products-grid .entry-header img {
-      height: 250px; }
+      height: 250px;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .archive .content-area .products-grid .entry-header .product-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -873,11 +906,11 @@ object {
   display: -ms-flexbox;
   display: flex; }
   .single-product .type-product .entry-header {
-    margin-top: 50px; }
+    margin-top: 40px; }
     .single-product .type-product .entry-header img {
-      max-width: 550px;
-      height: 400px; }
+      max-width: 550px; }
   .single-product .type-product .entry-content {
+    margin-top: 0;
     padding-left: 50px; }
     .single-product .type-product .entry-content .entry-title {
       color: #d99054;
@@ -887,19 +920,50 @@ object {
       font-size: 1.8rem;
       font-family: Novecento Sans Web,sans-serif;
       margin-top: 0; }
-    .single-product .type-product .entry-content .social-buttons button {
-      border: 1px solid #000;
-      color: #000;
-      border-radius: 0;
-      background-color: transparent;
-      padding: 13px 30px;
-      font-family: Novecento Sans Web,sans-serif;
-      font-size: 0.9rem; }
-      .single-product .type-product .entry-content .social-buttons button i {
-        padding-right: 10px; }
-    .single-product .type-product .entry-content .social-buttons button:hover {
+
+.blog .content-area, .single .content-area {
+  padding-top: 3rem;
+  padding-right: 3rem; }
+  .blog .content-area .entry-header, .single .content-area .entry-header {
+    position: relative; }
+    .blog .content-area .entry-header img, .single .content-area .entry-header img {
+      width: 1500px;
+      height: auto; }
+    .blog .content-area .entry-header .entry-title, .single .content-area .entry-header .entry-title {
+      position: absolute;
+      top: 10px;
       background-color: #248A83;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      text-shadow: none;
+      border: 1px;
+      padding: 3px 25px;
+      max-width: 75%;
       color: #fff; }
+      .blog .content-area .entry-header .entry-title a, .single .content-area .entry-header .entry-title a {
+        color: #fff; }
+      .blog .content-area .entry-header .entry-title a:hover, .single .content-area .entry-header .entry-title a:hover {
+        color: #f3e4c9; }
+    .blog .content-area .entry-header .entry-meta, .single .content-area .entry-header .entry-meta {
+      position: absolute;
+      bottom: 8px;
+      right: 0;
+      background-color: #248A83;
+      padding: 5px;
+      text-transform: uppercase;
+      font-family: Novecento Sans Web,sans-serif;
+      color: #fff; }
+      .blog .content-area .entry-header .entry-meta a, .single .content-area .entry-header .entry-meta a {
+        color: #fff; }
+      .blog .content-area .entry-header .entry-meta a:hover, .single .content-area .entry-header .entry-meta a:hover {
+        color: #f3e4c9; }
+  .blog .content-area .entry-content, .single .content-area .entry-content {
+    margin-bottom: 3rem; }
+  .blog .content-area .entry-footer, .single .content-area .entry-footer {
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase; }
+    .blog .content-area .entry-footer .cat-links, .single .content-area .entry-footer .cat-links {
+      padding-right: 20px; }
+  .blog .content-area .comments-area .comment-form-comment label, .single .content-area .comments-area .comment-form-comment label {
+    font-size: 1.1rem;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase; }
+  .blog .content-area .comments-area .comment-form-comment textarea, .single .content-area .comments-area .comment-form-comment textarea {
+    background-color: #eee; }

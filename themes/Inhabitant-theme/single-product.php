@@ -27,10 +27,10 @@ get_header(); ?>
 							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 							<p class="price"><?php echo CFS()->get( 'price' ); ?></p>
 							<?php the_content(); ?>
-							<div class="social-buttons">
-								<button class="like"><i class="fab fa-facebook-f"></i>LIKE</button>
-								<button class="tweet"><i class="fab fa-twitter"></i>TWEET</button>
-								<button class="pin"><i class="fab fa-pinterest"></i>PIN</button>
+							<div class="buttons-wrapper">
+								<button class="link-button"><i class="fab fa-facebook-f"></i>LIKE</button>
+								<button class="link-button"><i class="fab fa-twitter"></i>TWEET</button>
+								<button class="link-button"><i class="fab fa-pinterest"></i>PIN</button>
 
 							</div>
 

@@ -33,9 +33,7 @@
                 height: 310px;
                 img {
                     height: 250px;
-                    // max-width: 300px;
-                   
-
+                    object-fit: cover;   
                 }
                 .product-info {
                     display: flex;
@@ -71,15 +69,13 @@
     .type-product {
         display: flex;
         .entry-header {
-            margin-top: 50px;
+            margin-top: 40px;
             img {
                 max-width: 550px;
-                height: 400px;
-                
-
             }
         }
         .entry-content {
+            margin-top: 0;
             padding-left: 50px;
             .entry-title {
                 color: $color__brand-title;
@@ -92,27 +88,6 @@
                 margin-top: 0;
             }
 
-            .social-buttons {
-                button {
-                    border: 1px solid #000;
-                    color: #000;
-                    border-radius: 0;
-                    background-color: transparent;
-                    padding: 13px 30px;
-                    font-family: Novecento Sans Web,sans-serif;
-                    font-size: 0.9rem;
-
-                    i {
-                        padding-right: 10px;
-                    }
-                }
-                button:hover {
-                    background-color: $color__link;
-                    box-shadow: none;
-                    text-shadow: none;
-                    color: $color__background-body;
-                }
-            }
         }
     }
    

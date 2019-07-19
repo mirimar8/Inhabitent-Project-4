@@ -32,5 +32,11 @@
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		<div class="buttons-wrapper">
+			<button class="link-button"><i class="fab fa-facebook-f"></i>LIKE</button>
+			<button class="link-button"><i class="fab fa-twitter"></i>TWEET</button>
+			<button class="link-button"><i class="fab fa-pinterest"></i>PIN</button>
+		</div>
+
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -14,6 +14,7 @@
                a {
                    margin: 20px;
                    text-transform: uppercase;
+                   
                }
            }
         }
@@ -31,10 +32,16 @@
             .entry-header {
                 border: 1px solid #e1e1e1;
                 height: 310px;
-                img {
-                    height: 250px;
-                    object-fit: cover;   
+                a {
+                    background-color: $color__background-pre;
+
+                    img {
+                        height: 250px;
+                        object-fit: cover; 
+                        background-color: $color__background-pre;  
+                    }
                 }
+                
                 .product-info {
                     display: flex;
                     justify-content: space-between;

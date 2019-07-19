@@ -685,7 +685,9 @@ object {
   margin: 0 auto; }
 
 .container {
-  width: 1120px; }
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .site-header {
   display: -webkit-box;
@@ -790,8 +792,7 @@ object {
 .site-footer {
   background-color: black;
   color: white;
-  padding: 1rem;
-  text-align: center; }
+  padding: 1rem; }
   .site-footer #footer-sidebar1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -800,8 +801,29 @@ object {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 150px;
+    padding-top: 20px;
+    line-height: 1rem; }
+  .site-footer .widget {
+    width: 23%; }
+    .site-footer .widget .widget-title {
+      font-size: 1.2rem;
+      color: #d99054; }
+    .site-footer .widget .textwidget i {
+      margin-right: 1rem;
+      font-size: 1.2rem; }
+    .site-footer .widget .textwidget a:hover {
+      text-decoration: underline; }
+    .site-footer .widget .textwidget .social-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .site-footer .site-info {
+    text-align: center;
+    font-family: Novecento Sans Web,sans-serif; }
 
 /* Front page */
 /* about */
@@ -817,16 +839,6 @@ object {
     border-bottom: none; }
     .about-page .site-header a, .front-page .site-header a {
       color: white; }
-  .about-page .front-page .entry-content, .front-page .front-page .entry-content {
-    position: relative; }
-    .about-page .front-page .entry-content .entry-title, .front-page .front-page .entry-content .entry-title {
-      visibility: hidden; }
-    .about-page .front-page .entry-content img, .front-page .front-page .entry-content img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
   .about-page .site-content, .front-page .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -883,10 +895,13 @@ object {
   .archive .content-area .products-grid .entry-header {
     border: 1px solid #e1e1e1;
     height: 310px; }
-    .archive .content-area .products-grid .entry-header img {
-      height: 250px;
-      -o-object-fit: cover;
-         object-fit: cover; }
+    .archive .content-area .products-grid .entry-header a {
+      background-color: #eee; }
+      .archive .content-area .products-grid .entry-header a img {
+        height: 250px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        background-color: #eee; }
     .archive .content-area .products-grid .entry-header .product-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -967,3 +982,49 @@ object {
     text-transform: uppercase; }
   .blog .content-area .comments-area .comment-form-comment textarea, .single .content-area .comments-area .comment-form-comment textarea {
     background-color: #eee; }
+
+.front-page .content-area .entry-content {
+  position: relative; }
+  .front-page .content-area .entry-content .entry-title {
+    visibility: hidden; }
+  .front-page .content-area .entry-content img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.front-page .content-area h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 40px; }
+
+.front-page .front-tax-products img {
+  height: 70px;
+  width: 70px; }
+
+.front-page .front-journal-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 50px; }
+  .front-page .front-journal-posts .front-post {
+    border: 1px solid #e1e1e1;
+    width: 350px; }
+    .front-page .front-journal-posts .front-post img {
+      height: 250px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      padding-bottom: 5px;
+      background-color: #eee; }
+    .front-page .front-journal-posts .front-post .front-post-info {
+      padding: 0.75rem; }
+      .front-page .front-journal-posts .front-post .front-post-info .entry-meta {
+        font-size: 0.75rem; }
+      .front-page .front-journal-posts .front-post .front-post-info .entry-title {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 1.5rem; }

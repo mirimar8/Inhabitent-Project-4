@@ -792,10 +792,12 @@ object {
       font-weight: bold; }
 
 .site-footer {
+  background: url(Inhabitant-theme/images/dark-wood@2x.png);
   background-color: black;
   color: white;
-  padding: 1rem; }
-  .site-footer #footer-sidebar1 {
+  padding: 1rem;
+  height: 350px; }
+  .site-footer .footer-sidebar1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -810,7 +812,7 @@ object {
     padding-top: 20px;
     line-height: 1rem; }
   .site-footer .widget {
-    width: 23%; }
+    width: 25%; }
     .site-footer .widget .widget-title {
       font-size: 1.2rem;
       color: #d99054; }
@@ -827,9 +829,25 @@ object {
       display: flex; }
     .site-footer .widget .day-of-week {
       font-weight: bold; }
+  .site-footer .footer-logo {
+    width: 50%;
+    text-align: right;
+    margin-right: 200px;
+    margin-top: 20px; }
+    .site-footer .footer-logo img {
+      width: 50%; }
   .site-footer .site-info {
-    text-align: center;
-    font-family: Novecento Sans Web,sans-serif; }
+    font-family: Novecento Sans Web,sans-serif;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
 
 /* Front page */
 /* about */

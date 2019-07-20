@@ -127,6 +127,9 @@
                 margin: 0;
                 padding: 0;
             }
+            .day-of-week {
+                font-weight: bold;
+            }
         }
     }
 }
@@ -158,6 +161,10 @@
             font-size: 1.2rem;
         }
 
+        a {
+            color: $color__background_body;
+        }
+
         a:hover {
             text-decoration: underline;
         }
@@ -165,11 +172,8 @@
             display: flex;
         }
       }
-    
-
-      img {
-          
-          
+      .day-of-week {
+        font-weight: bold;
       }
     }
     .site-info {

@@ -45,13 +45,12 @@ get_header(); ?>
 					$term_list = '<p class="my_term-archive">';
 					foreach ( $terms as $term ) {
 						$i++;
-						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name .' STUFF</a>';
+						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name .' STUFF</a>'. $term->description;
 					}
 					echo $term_list;
 				}
 				?>
-				<?php $description = term_description(); ?>
-				<?php echo term_description(); ?>
+				
 
 
 

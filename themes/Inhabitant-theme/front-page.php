@@ -30,24 +30,32 @@ get_header(); ?>
 			<div class="front-tax-products">
 
 			
-				<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/product-type-icons/do.svg" alt="do">
-				<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/product-type-icons/eat.svg" alt="eat">
-				<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/product-type-icons/sleep.svg" alt="sleep">
-				<img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/product-type-icons/wear.svg" alt="wear">
+		
 			
 				<?php $terms = get_terms( array(
     			'taxonomy' => 'product_type',
     			'hide_empty' => false,
 				) );
 				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+					
 					$count = count( $terms );
 					$i = 0;
+
+					$tax_images = array('do','eat','sleep','wear');
+					foreach ($tax_images as $tax_image) {
+						echo "<img src=' //localhost:3000/Inhabitant-Project4/wp-content/themes/Inhabitant-theme/images/product-type-icons/$tax_image.svg'>";
+					}
+					
+					$description_list = '<p class="my_description-archive">';
 					$term_list = '<p class="my_term-archive">';
 					foreach ( $terms as $term ) {
 						$i++;
-						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name .' STUFF</a>'. $term->description;
+						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name .' STUFF </a>';
+						$description_list .='<p>' .$term->description . '</p>';
 					}
+					echo $description_list;
 					echo $term_list;
+					
 				}
 				?>
 				

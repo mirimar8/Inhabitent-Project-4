@@ -20,5 +20,8 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<div class="buttons-wrapper">
+			<a class="link-button" href=" . <?php echo get_permalink();?> .">READ MORE -></a>
+		</div>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.site {
+.site  {
     margin: 0 auto;
    
 }
@@ -32,17 +32,44 @@
         display: flex;
         justify-content: flex-end;
         font-family: Novecento Sans Web,sans-serif;
-        fieldset {
-            border: none;
-            padding: 0;
-        }
-        
+       
         .menu-item {
             padding: 0 15px;
             text-transform: uppercase;
         }
     }
+    .search-form {
+        
+        fieldset {
+            border: none;
+            padding: 0;
+           
+           
+            .search-submit {
+                border: none;
+                background: transparent;
+                box-shadow: none;
+                color: $color__background-body;
+                font-size: 1rem;
+            }
+            .search-field {
+                border: none;
+                background: transparent;
+                box-shadow: none;
+                color: $color__background-body;
+                font-size: 1rem;
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase;
+            }
+            .search-field:focus {
+                outline: none;
+            }
+        }
+    }
+      
 }
+
+          
 .site-content {
     margin-right: auto;
     margin-left: auto;
@@ -196,6 +223,56 @@
 
     }
       
+}
+
+.search {
+    .site-main {
+        padding-right: 70px;
+        padding-top: 10px;
+        .page-title {
+            font-size: 2.3rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        .search-pagination{
+            font-family: Novecento Sans Web,sans-serif;
+            padding: 1.5rem 0;
+            text-transform: uppercase;
+            .page-numbers {
+                background-color: $color__link;
+                color: #fff;
+                display: inline-block;
+                line-height: 1;
+                padding: 0.5rem 0.75rem;
+                margin-right: 0.25rem;
+            }
+            .page-numbers:hover {
+                background-color: $color__link-hover;
+            }
+        
+            .current {
+                background-color: grey;
+            }
+            
+            
+        }
+    }
+    
+}
+
+.error404 {
+    fieldset {
+        border:none;
+        .search-submit {
+            display: none;
+            
+        }
+        .search-field {
+            border: 1px solid #e1e1e1;
+            background: $color__background-pre;
+        }
+
+    }
 }
 
 /* Front page */

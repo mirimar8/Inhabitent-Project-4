@@ -1,3 +1,6 @@
-// $('.search-form').on('click', '.open-search', function () {
-//     $('[name="search"]').toggleClass('show')
-// });
+
+jQuery(document).ready(function ($) {
+    $(".search-toggle").click(function () {
+        $(".search-field").toggle("300");
+    });
+});

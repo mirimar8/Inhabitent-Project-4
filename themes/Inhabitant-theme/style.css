@@ -722,22 +722,25 @@ object {
   .site-header .search-form fieldset {
     border: none;
     padding: 0; }
-    .site-header .search-form fieldset .search-submit {
+    .site-header .search-form fieldset .search-toggle {
       border: none;
       background: transparent;
       -webkit-box-shadow: none;
               box-shadow: none;
-      color: #fff;
-      font-size: 0.9rem; }
+      color: #248A83;
+      font-size: 0.9rem;
+      float: left; }
     .site-header .search-form fieldset .search-field {
+      display: none;
       border: none;
       background: transparent;
       -webkit-box-shadow: none;
               box-shadow: none;
-      color: #fff;
       font-size: 1rem;
       font-family: Novecento Sans Web,sans-serif;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-left: 10px;
+      padding-top: 0; }
     .site-header .search-form fieldset .search-field:focus {
       outline: none; }
 
@@ -752,6 +755,8 @@ object {
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3; }
+    .site-content .content-area .find-us-text {
+      padding-right: 40px; }
     .site-content .content-area h2 {
       font-size: 2rem; }
     .site-content .content-area .wpcf7-form label {
@@ -815,7 +820,8 @@ object {
   background-color: black;
   color: white;
   padding: 1rem;
-  height: 350px; }
+  height: 350px;
+  margin-top: 3rem; }
   .site-footer .footer-sidebar1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -893,7 +899,7 @@ object {
 
 .error404 fieldset {
   border: none; }
-  .error404 fieldset .search-submit {
+  .error404 fieldset .search-toggle {
     display: none; }
   .error404 fieldset .search-field {
     border: 1px solid #e1e1e1;
@@ -903,16 +909,29 @@ object {
 /* about */
 .about-page, .front-page {
   max-width: 1500px; }
-  .about-page .site-header, .front-page .site-header {
-    background-color: transparent; }
   .about-page .site, .front-page .site {
     max-width: 1500px;
     position: relative; }
   .about-page .site-header, .front-page .site-header {
+    background-color: transparent;
     position: absolute;
     border-bottom: none; }
     .about-page .site-header a, .front-page .site-header a {
       color: white; }
+    .about-page .site-header a:hover, .front-page .site-header a:hover {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form .search-field, .front-page .site-header .search-form .search-field {
+      color: white; }
+    .about-page .site-header .search-form ::-webkit-input-placeholder, .front-page .site-header .search-form ::-webkit-input-placeholder {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form ::-ms-input-placeholder, .front-page .site-header .search-form ::-ms-input-placeholder {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form ::placeholder, .front-page .site-header .search-form ::placeholder {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form .search-toggle, .front-page .site-header .search-form .search-toggle {
+      color: white; }
+    .about-page .site-header .search-form .search-toggle:hover, .front-page .site-header .search-form .search-toggle:hover {
+      color: #f3e4c9; }
   .about-page .site-content, .front-page .site-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -937,7 +956,9 @@ object {
       font-size: 2.1rem;
       text-align: center; }
     .about-page .site-content p, .front-page .site-content p {
-      text-align: left; }
+      text-align: left;
+      max-width: 800px;
+      margin: 20px auto; }
     .about-page .site-content .widget-area, .front-page .site-content .widget-area {
       display: none; }
 

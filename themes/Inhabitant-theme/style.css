@@ -1067,12 +1067,25 @@ object {
     text-transform: uppercase; }
     .blog .content-area .entry-footer .cat-links, .single .content-area .entry-footer .cat-links {
       padding-right: 20px; }
-  .blog .content-area .comments-area .comment-form-comment label, .single .content-area .comments-area .comment-form-comment label {
+  .blog .content-area .comments-area .comment-form-comment label, .blog .content-area .comments-area .comment-form-author label, .blog .content-area .comments-area .comment-form-email label, .blog .content-area .comments-area .comment-form-url label, .single .content-area .comments-area .comment-form-comment label, .single .content-area .comments-area .comment-form-author label, .single .content-area .comments-area .comment-form-email label, .single .content-area .comments-area .comment-form-url label {
     font-size: 1.1rem;
     font-family: Novecento Sans Web,sans-serif;
     text-transform: uppercase; }
-  .blog .content-area .comments-area .comment-form-comment textarea, .single .content-area .comments-area .comment-form-comment textarea {
+  .blog .content-area .comments-area .comment-form-comment textarea, .blog .content-area .comments-area .comment-form-comment input, .blog .content-area .comments-area .comment-form-author textarea, .blog .content-area .comments-area .comment-form-author input, .blog .content-area .comments-area .comment-form-email textarea, .blog .content-area .comments-area .comment-form-email input, .blog .content-area .comments-area .comment-form-url textarea, .blog .content-area .comments-area .comment-form-url input, .single .content-area .comments-area .comment-form-comment textarea, .single .content-area .comments-area .comment-form-comment input, .single .content-area .comments-area .comment-form-author textarea, .single .content-area .comments-area .comment-form-author input, .single .content-area .comments-area .comment-form-email textarea, .single .content-area .comments-area .comment-form-email input, .single .content-area .comments-area .comment-form-url textarea, .single .content-area .comments-area .comment-form-url input {
     background-color: #eee; }
+  .blog .content-area .comments-area .submit, .single .content-area .comments-area .submit {
+    background-color: #248A83;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    text-shadow: none;
+    font-family: Novecento Sans Web,sans-serif;
+    text-transform: uppercase; }
+  .blog .content-area .comments-area .comment-form-cookies-consent, .single .content-area .comments-area .comment-form-cookies-consent {
+    display: none; }
 
 .front-page .content-area .entry-content {
   position: relative; }

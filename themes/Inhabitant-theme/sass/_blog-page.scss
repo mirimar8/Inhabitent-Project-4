@@ -55,17 +55,33 @@
         }
 
         .comments-area {
-            .comment-form-comment {
+            .comment-form-comment, .comment-form-author, .comment-form-email, .comment-form-url {
                 label {
                     font-size: 1.1rem;
                     font-family: Novecento Sans Web,sans-serif;
                     text-transform: uppercase;
                 }
-                textarea {
+                textarea, input {
                     background-color: $color__background-pre;
                 }
             }
+            .submit {
+                background-color: $color__link;
+                box-shadow: none;
+                border-radius: 0;
+                color: $color__background-body;
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+                text-shadow: none;
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase;
+            }
+
+            .comment-form-cookies-consent {
+                display: none;
+            }
         }
+
             
         
     }

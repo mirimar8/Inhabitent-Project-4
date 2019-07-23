@@ -1,0 +1,31 @@
+.search {
+    .site-main {
+        padding-right: 70px;
+        padding-top: 10px;
+        .page-title {
+            font-size: 2.3rem;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+        .search-pagination{
+            font-family: Novecento Sans Web,sans-serif;
+            padding: 1.5rem 0;
+            text-transform: uppercase;
+            .page-numbers {
+                background-color: $color__link;
+                color: #fff;
+                display: inline-block;
+                line-height: 1;
+                padding: 0.5rem 0.75rem;
+                margin-right: 0.25rem;
+            }
+            .page-numbers:hover {
+                background-color: $color__link-hover;
+            }
+        
+            .current {
+                background-color: grey;
+            }
+        }
+    }
+}

@@ -2,7 +2,6 @@
     .content-area {
         .page-header{
            text-align: center;
-        //    font-size: 1.2rem;
            font-weight: 350;
            margin-bottom: 50px;
            margin-top: 30px;
@@ -14,7 +13,6 @@
                a {
                    margin: 20px;
                    text-transform: uppercase;
-                   
                }
            }
         }
@@ -48,28 +46,18 @@
                     padding-left: 15px;
                     padding-right: 15px;
                     font-size: 1rem;
-
-                    // p {
-                    //     content: leader(dotted) target-counter(attr(href), page);
-                    // }
-                    .entry-title {
-                    }
                 }
-                
             }
         }
     }
-    
 }
-
 
 .tax-product_type {
     .content-area{
         .products-grid {
             grid-template-rows: none;
-            }
-    }
-    
+        }
+    }  
 }
 
 .single-product {
@@ -94,9 +82,6 @@
                 font-family: Novecento Sans Web,sans-serif;
                 margin-top: 0;
             }
-
         }
     }
-   
-
 }

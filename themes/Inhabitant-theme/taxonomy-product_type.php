@@ -38,7 +38,6 @@ get_header(); ?>
 
 					</header><!-- .entry-header -->
 
-
 				</article><!-- #post-## -->
 
 			<?php endwhile; ?>

@@ -104,13 +104,6 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
-// // Remove "Editor" links from sub-menus
-// function inhabitent_remove_submenus() {
-//     remove_submenu_page( 'themes.php', 'theme-editor.php' );
-//     remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
-// }
-// add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
-
 //enqueues our external font awesome stylesheet
 function enqueue_our_required_stylesheets(){
 	wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css'); 

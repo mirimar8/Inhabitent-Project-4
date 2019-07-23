@@ -31,10 +31,8 @@ get_header(); ?>
 								<button class="link-button"><i class="fab fa-facebook-f"></i>LIKE</button>
 								<button class="link-button"><i class="fab fa-twitter"></i>TWEET</button>
 								<button class="link-button"><i class="fab fa-pinterest"></i>PIN</button>
-
 							</div>
 
-						
 					</div><!-- .entry-content -->
 
 					<footer class="entry-footer">

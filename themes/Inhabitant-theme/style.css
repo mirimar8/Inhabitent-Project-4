@@ -815,153 +815,6 @@ object {
     .site-content .widget-area .widget .day-of-week {
       font-weight: bold; }
 
-.site-footer {
-  background: url(Inhabitant-theme/images/dark-wood@2x.png);
-  background-color: black;
-  color: white;
-  padding: 1rem;
-  height: 350px;
-  margin-top: 3rem; }
-  .site-footer .footer-sidebar1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-left: 150px;
-    padding-top: 20px;
-    line-height: 1rem; }
-  .site-footer .widget {
-    width: 25%; }
-    .site-footer .widget .widget-title {
-      font-size: 1.2rem;
-      color: #d99054; }
-    .site-footer .widget .textwidget i {
-      margin-right: 1rem;
-      font-size: 1.2rem; }
-    .site-footer .widget .textwidget a {
-      color: #fff; }
-    .site-footer .widget .textwidget a:hover {
-      text-decoration: underline; }
-    .site-footer .widget .textwidget .social-icons {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    .site-footer .widget .day-of-week {
-      font-weight: bold; }
-  .site-footer .footer-logo {
-    width: 50%;
-    text-align: right;
-    margin-right: 200px;
-    margin-top: 20px; }
-    .site-footer .footer-logo img {
-      width: 50%; }
-  .site-footer .site-info {
-    font-family: Novecento Sans Web,sans-serif;
-    height: 90px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end; }
-
-.search .site-main {
-  padding-right: 70px;
-  padding-top: 10px; }
-  .search .site-main .page-title {
-    font-size: 2.3rem;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e1e1e1; }
-  .search .site-main .search-pagination {
-    font-family: Novecento Sans Web,sans-serif;
-    padding: 1.5rem 0;
-    text-transform: uppercase; }
-    .search .site-main .search-pagination .page-numbers {
-      background-color: #248A83;
-      color: #fff;
-      display: inline-block;
-      line-height: 1;
-      padding: 0.5rem 0.75rem;
-      margin-right: 0.25rem; }
-    .search .site-main .search-pagination .page-numbers:hover {
-      background-color: midnightblue; }
-    .search .site-main .search-pagination .current {
-      background-color: grey; }
-
-.error404 fieldset {
-  border: none; }
-  .error404 fieldset .search-toggle {
-    display: none; }
-  .error404 fieldset .search-field {
-    border: 1px solid #e1e1e1;
-    background: #eee; }
-
-/* Front page */
-/* about */
-.about-page, .front-page {
-  max-width: 1500px; }
-  .about-page .site, .front-page .site {
-    max-width: 1500px;
-    position: relative; }
-  .about-page .site-header, .front-page .site-header {
-    background-color: transparent;
-    position: absolute;
-    border-bottom: none; }
-    .about-page .site-header a, .front-page .site-header a {
-      color: white; }
-    .about-page .site-header a:hover, .front-page .site-header a:hover {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form .search-field, .front-page .site-header .search-form .search-field {
-      color: white; }
-    .about-page .site-header .search-form ::-webkit-input-placeholder, .front-page .site-header .search-form ::-webkit-input-placeholder {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form ::-ms-input-placeholder, .front-page .site-header .search-form ::-ms-input-placeholder {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form ::placeholder, .front-page .site-header .search-form ::placeholder {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form .search-toggle, .front-page .site-header .search-form .search-toggle {
-      color: white; }
-    .about-page .site-header .search-form .search-toggle:hover, .front-page .site-header .search-form .search-toggle:hover {
-      color: #f3e4c9; }
-  .about-page .site-content, .front-page .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 0; }
-    .about-page .site-content .entry-header, .front-page .site-content .entry-header {
-      display: none; }
-    .about-page .site-content .entry-content, .front-page .site-content .entry-content {
-      margin: 0; }
-      .about-page .site-content .entry-content .hero-image-header, .front-page .site-content .entry-content .hero-image-header {
-        width: 100%;
-        height: 100vh; }
-        .about-page .site-content .entry-content .hero-image-header .entry-title, .front-page .site-content .entry-content .hero-image-header .entry-title {
-          color: #fff;
-          font-size: 3rem;
-          text-align: center;
-          text-transform: uppercase; }
-    .about-page .site-content h2, .front-page .site-content h2 {
-      color: #2f1339;
-      text-transform: uppercase;
-      font-size: 2.1rem;
-      text-align: center; }
-    .about-page .site-content p, .front-page .site-content p {
-      text-align: left;
-      max-width: 800px;
-      margin: 20px auto; }
-    .about-page .site-content .widget-area, .front-page .site-content .widget-area {
-      display: none; }
-
 .archive .content-area .page-header {
   text-align: center;
   font-weight: 350;
@@ -1160,3 +1013,148 @@ object {
         margin: 0;
         font-size: 1.3rem;
         line-height: 1.5rem; }
+
+.site-footer {
+  background: url(Inhabitant-theme/images/dark-wood@2x.png);
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  height: 350px;
+  margin-top: 3rem; }
+  .site-footer .footer-sidebar1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 150px;
+    padding-top: 20px;
+    line-height: 1rem; }
+  .site-footer .widget {
+    width: 25%; }
+    .site-footer .widget .widget-title {
+      font-size: 1.2rem;
+      color: #d99054; }
+    .site-footer .widget .textwidget i {
+      margin-right: 1rem;
+      font-size: 1.2rem; }
+    .site-footer .widget .textwidget a {
+      color: #fff; }
+    .site-footer .widget .textwidget a:hover {
+      text-decoration: underline; }
+    .site-footer .widget .textwidget .social-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .site-footer .widget .day-of-week {
+      font-weight: bold; }
+  .site-footer .footer-logo {
+    width: 50%;
+    text-align: right;
+    margin-right: 200px;
+    margin-top: 20px; }
+    .site-footer .footer-logo img {
+      width: 50%; }
+  .site-footer .site-info {
+    font-family: Novecento Sans Web,sans-serif;
+    height: 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+
+.search .site-main {
+  padding-right: 70px;
+  padding-top: 10px; }
+  .search .site-main .page-title {
+    font-size: 2.3rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1; }
+  .search .site-main .search-pagination {
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.5rem 0;
+    text-transform: uppercase; }
+    .search .site-main .search-pagination .page-numbers {
+      background-color: #248A83;
+      color: #fff;
+      display: inline-block;
+      line-height: 1;
+      padding: 0.5rem 0.75rem;
+      margin-right: 0.25rem; }
+    .search .site-main .search-pagination .page-numbers:hover {
+      background-color: midnightblue; }
+    .search .site-main .search-pagination .current {
+      background-color: grey; }
+
+.error404 fieldset {
+  border: none; }
+  .error404 fieldset .search-toggle {
+    display: none; }
+  .error404 fieldset .search-field {
+    border: 1px solid #e1e1e1;
+    background: #eee; }
+
+.about-page, .front-page {
+  max-width: 1500px; }
+  .about-page .site, .front-page .site {
+    max-width: 1500px;
+    position: relative; }
+  .about-page .site-header, .front-page .site-header {
+    background-color: transparent;
+    position: absolute;
+    border-bottom: none; }
+    .about-page .site-header a, .front-page .site-header a {
+      color: white; }
+    .about-page .site-header a:hover, .front-page .site-header a:hover {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form .search-field, .front-page .site-header .search-form .search-field {
+      color: white; }
+    .about-page .site-header .search-form ::-webkit-input-placeholder, .front-page .site-header .search-form ::-webkit-input-placeholder {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form ::-ms-input-placeholder, .front-page .site-header .search-form ::-ms-input-placeholder {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form ::placeholder, .front-page .site-header .search-form ::placeholder {
+      color: #f3e4c9; }
+    .about-page .site-header .search-form .search-toggle, .front-page .site-header .search-form .search-toggle {
+      color: white; }
+    .about-page .site-header .search-form .search-toggle:hover, .front-page .site-header .search-form .search-toggle:hover {
+      color: #f3e4c9; }
+  .about-page .site-content, .front-page .site-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0; }
+    .about-page .site-content .entry-header, .front-page .site-content .entry-header {
+      display: none; }
+    .about-page .site-content .entry-content, .front-page .site-content .entry-content {
+      margin: 0; }
+      .about-page .site-content .entry-content .hero-image-header, .front-page .site-content .entry-content .hero-image-header {
+        width: 100%;
+        height: 100vh; }
+        .about-page .site-content .entry-content .hero-image-header .entry-title, .front-page .site-content .entry-content .hero-image-header .entry-title {
+          color: #fff;
+          font-size: 3rem;
+          text-align: center;
+          text-transform: uppercase; }
+    .about-page .site-content h2, .front-page .site-content h2 {
+      color: #2f1339;
+      text-transform: uppercase;
+      font-size: 2.1rem;
+      text-align: center; }
+    .about-page .site-content p, .front-page .site-content p {
+      text-align: left;
+      max-width: 800px;
+      margin: 20px auto; }
+    .about-page .site-content .widget-area, .front-page .site-content .widget-area {
+      display: none; }

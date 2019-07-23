@@ -3,7 +3,6 @@
 ## Description
 The Inhabitent site is a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. The site uses Wordpress and based on the underscores theme.
 
-You can find a link to my project here: https://mirimar8.github.io/Inhabitant-Project4/
 
 ![screenshot of the website](images/screenshots/front1.png)
 ![screenshot of the website](images/screenshots/front2.png)

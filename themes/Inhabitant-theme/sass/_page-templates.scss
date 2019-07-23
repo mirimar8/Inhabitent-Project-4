@@ -22,7 +22,6 @@
     width: 100%;
     z-index: 3;
     
-
     .site-branding {
         width:50px;
         height:30px;
@@ -40,11 +39,9 @@
         }
     }
     .search-form {
-        
         fieldset {
             border: none;
             padding: 0;
-           
            
             .search-toggle {
                 border: none;
@@ -53,8 +50,6 @@
                 color: $color__link;
                 font-size: 0.9rem;
                 float: left;
-                
-                
             }
             .search-field {
                 display: none;
@@ -71,8 +66,7 @@
                 outline: none;
             }
         }
-    }
-      
+    } 
 }
 
           
@@ -168,202 +162,6 @@
     }
 }
 
-.site-footer {
-    background: url(Inhabitant-theme/images/dark-wood@2x.png);
-    background-color: black;
-    color: white;
-    padding: 1rem;
-    height: 350px;
-    margin-top: 3rem;
-
-    .footer-sidebar1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        padding-left: 150px;
-        padding-top: 20px;
-        line-height: 1rem;
-    }
-
-    .widget {
-        width:25%;
-      .widget-title {
-          font-size: 1.2rem;
-          color: $color__brand-title;
-      }
-      .textwidget {
-        i {
-            margin-right: 1rem;
-            font-size: 1.2rem;
-        }
-
-        a {
-            color: $color__background_body;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-        .social-icons {
-            display: flex;
-        }
-      }
-      .day-of-week {
-        font-weight: bold;
-      }
-    }
-    .footer-logo {
-        width: 50%;
-        text-align: right;
-        margin-right: 200px;
-        margin-top: 20px;
-        img {
-            width: 50%;
-        }
-    }
-   
-    .site-info {
-        font-family: Novecento Sans Web,sans-serif;
-        height: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end; 
-
-    }
-      
-}
-
-.search {
-    .site-main {
-        padding-right: 70px;
-        padding-top: 10px;
-        .page-title {
-            font-size: 2.3rem;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e1e1e1;
-        }
-        .search-pagination{
-            font-family: Novecento Sans Web,sans-serif;
-            padding: 1.5rem 0;
-            text-transform: uppercase;
-            .page-numbers {
-                background-color: $color__link;
-                color: #fff;
-                display: inline-block;
-                line-height: 1;
-                padding: 0.5rem 0.75rem;
-                margin-right: 0.25rem;
-            }
-            .page-numbers:hover {
-                background-color: $color__link-hover;
-            }
-        
-            .current {
-                background-color: grey;
-            }
-            
-            
-        }
-    }
-    
-}
-
-.error404 {
-    fieldset {
-        border:none;
-        .search-toggle {
-            display: none;
-            
-        }
-        .search-field {
-            border: 1px solid #e1e1e1;
-            background: $color__background-pre;
-        }
-
-    }
-}
-
-/* Front page */
-/* about */
-
-.about-page, .front-page {
-    max-width: 1500px;
-    
-    .site {
-       max-width: 1500px;
-       position: relative;
-
-    } 
-    .site-header {
-        background-color: transparent;
-        position: absolute;
-        border-bottom: none;
-        a {
-            color: white;
-        }
-        a:hover {
-            color: $color__hover;
-        }
-        .search-form {
-            .search-field {
-                color: white;
-            }
-            ::placeholder {
-                color: $color__hover;
-            }
-            .search-toggle {
-                color: white;
-            } 
-            .search-toggle:hover {
-                color: $color__hover;
-            }
-        }
-    }
-
-    
-    .site-content {
-        display: flex;
-        width: 100%;
-        padding: 0;
-
-        .entry-header {
-            display: none;
-        }
-
-        .entry-content {
-            margin: 0;
-            .hero-image-header {
-                width:100%;
-                height:100vh;
-                .entry-title {
-                    color: #fff;
-                    font-size: 3rem;
-                    text-align: center;
-                    text-transform: uppercase;
-                }
-            }
-        }
-        h2 {
-            color: #2f1339;
-            text-transform: uppercase;
-            font-size: 2.1rem;
-            text-align: center;
-            
-        }
-        
-        p {
-            text-align: left;
-            max-width: 800px;
-            margin: 20px auto;
-            // margin-bottom: 30px;
-        }
-    
-        .widget-area {
-            display: none;        
-        }
-    }
-    
-}
 
 
 

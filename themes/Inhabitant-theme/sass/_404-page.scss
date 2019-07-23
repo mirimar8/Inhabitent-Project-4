@@ -1,0 +1,13 @@
+.error404 {
+    fieldset {
+        border:none;
+        .search-toggle {
+            display: none;
+            
+        }
+        .search-field {
+            border: 1px solid #e1e1e1;
+            background: $color__background-pre;
+        }
+    }
+}

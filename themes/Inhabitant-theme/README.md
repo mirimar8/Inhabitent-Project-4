@@ -1,21 +1,42 @@
-# RED Starter
+# Inhabitent Site
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+## Description
+The Inhabitent site is a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. The site uses Wordpress and based on the underscores theme.
 
+You can find a link to my project here: https://mirimar8.github.io/Inhabitant-Project4/
+
+![screenshot of the website](images/screenshots/front1.png)
+![screenshot of the website](images/screenshots/front2.png)
+![screenshot of the website](images/screenshots/front3.png)
+![screenshot of the website](images/screenshots/shop.png)
+![screenshot of the website](images/screenshots/tax-shop.png)
+![screenshot of the website](images/screenshots/single-shop.png)
+![screenshot of the website](images/screenshots/journal.png)
+![screenshot of the website](images/screenshots/about1.png)
+![screenshot of the website](images/screenshots/about2.png)
+![screenshot of the website](images/screenshots/find-us.png)
+
+## Technologies Used 
+
+* php
+* Wordpress
+* HTML5
+* CSS3 and Sass 
+* Jquery
+* Gulp
+* JavaScript
+* Use of GIT and GitHub.
+
+## Personal learnings
+* Using WordPress as a content management system (CMS).
+* Using custom post types and taxonomies for additional content types (using a functionality plugin).
+* Using custom fields for additional metadata (using the Custom Field Suite plugin).
+* Using php functions to request data from php pages.
+ 
 ## Installation
 
-### 1. Download me (don't clone me!)
+1. Download repository and then add it to your `wp-content` directory.
 
-Then add me to your `wp-content` directory.
+2. run `npm install`.
 
-### 2. Rename the `redstarter-master` directory
-
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
+3. Update the proxy in `gulpfile.js`.

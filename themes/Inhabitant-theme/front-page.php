@@ -29,45 +29,37 @@ get_header(); ?>
 
 			<div class="front-tax-products">
 
-			
-		
-			
 				<?php $terms = get_terms( array(
     			'taxonomy' => 'product_type',
     			'hide_empty' => false,
 				) );
 				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
-					
+
 					$count = count( $terms );
 					$i = 0;
 
 					$tax_images = array('do','eat','sleep','wear');
-					foreach ($tax_images as $tax_image) {
-						echo "<img src=' //localhost:3000/Inhabitant-Project4/wp-content/themes/Inhabitant-theme/images/product-type-icons/$tax_image.svg'>";
-					}
 					
-					$description_list = '<p class="my_description-archive">';
-					$term_list = '<p class="my_term-archive">';
-					foreach ( $terms as $term ) {
-						$i++;
-						$term_list .= '<a href="' . esc_url( get_term_link( $term ) ) . '" alt="' . esc_attr( sprintf( __( 'View all post filed under %s', 'my_localization_domain' ), $term->name ) ) . '">' . $term->name .' STUFF </a>';
-						$description_list .='<p>' .$term->description . '</p>';
+					foreach ( $terms as $term ) {?>
+						<div class="front-shop-block">
+
+							<img src=' //localhost:3000/Inhabitant-Project4/wp-content/themes/Inhabitant-theme/images/product-type-icons/<?php echo $tax_images[$i] ?>.svg'>
+							<p><?php echo $term->description ?></p>
+							<a href="<?php echo esc_url( get_term_link($term)); ?>"><?php echo $term->name ?> Stuff</a>
+
+						</div>
+						
+						<?php $i++; 
 					}
-					echo $description_list;
-					echo $term_list;
-					
-				}
+				} 
 				?>
 				
-
-
-
-
-			
-
 			</div>	
+
 			<h2><?php echo CFS()->get( 'journal_title' ); ?></h2>
+
 			<div class="front-journal-posts">
+			
 			<?php
 				$args = array(
 				'order' => 'DSC',
@@ -100,7 +92,7 @@ get_header(); ?>
 					</div>
 					</div>
 				</div>	
-   				<?php endwhile; ?>
+   					<?php endwhile; ?>
    				<?php the_posts_navigation(); ?>
 				<?php wp_reset_postdata(); ?>
 				  

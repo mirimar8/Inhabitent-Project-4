@@ -698,11 +698,12 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 0.5rem 10rem;
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 3; }
   .site-header .site-branding {
     width: 50px;
     height: 30px; }
@@ -727,7 +728,7 @@ object {
       -webkit-box-shadow: none;
               box-shadow: none;
       color: #fff;
-      font-size: 1rem; }
+      font-size: 0.9rem; }
     .site-header .search-form fieldset .search-field {
       border: none;
       background: transparent;
@@ -903,7 +904,7 @@ object {
 .about-page, .front-page {
   max-width: 1500px; }
   .about-page .site-header, .front-page .site-header {
-    z-index: 3; }
+    background-color: transparent; }
   .about-page .site, .front-page .site {
     max-width: 1500px;
     position: relative; }
@@ -934,13 +935,9 @@ object {
       color: #2f1339;
       text-transform: uppercase;
       font-size: 2.1rem;
-      text-align: center;
-      max-width: 1120px;
-      margin: 30px 400px; }
+      text-align: center; }
     .about-page .site-content p, .front-page .site-content p {
-      text-align: left;
-      max-width: 1120px;
-      margin: 30px 400px; }
+      text-align: left; }
     .about-page .site-content .widget-area, .front-page .site-content .widget-area {
       display: none; }
 
@@ -1072,9 +1069,37 @@ object {
   font-weight: 400;
   margin: 40px; }
 
-.front-page .front-tax-products img {
-  height: 70px;
-  width: 70px; }
+.front-page .front-tax-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center; }
+  .front-page .front-tax-products .front-shop-block {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: 10px;
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+    padding-bottom: 25px; }
+    .front-page .front-tax-products .front-shop-block img {
+      height: 70px;
+      width: 70px; }
+    .front-page .front-tax-products .front-shop-block p {
+      text-align: center; }
+    .front-page .front-tax-products .front-shop-block a {
+      background-color: #248A83;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 0;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+      text-shadow: none;
+      font-family: Novecento Sans Web,sans-serif;
+      text-transform: uppercase; }
 
 .front-page .front-journal-posts {
   display: -webkit-box;

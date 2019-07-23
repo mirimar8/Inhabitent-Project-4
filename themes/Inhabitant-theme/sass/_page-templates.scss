@@ -15,11 +15,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: transparent;
+    background-color: hsla(0,0%,100%,.85);
     padding: 0.5rem 10rem;
     border-bottom: 1px solid #e1e1e1;
     position: fixed;
     width: 100%;
+    z-index: 3;
     
 
     .site-branding {
@@ -50,7 +51,9 @@
                 background: transparent;
                 box-shadow: none;
                 color: $color__background-body;
-                font-size: 1rem;
+                font-size: 0.9rem;
+                
+                
             }
             .search-field {
                 border: none;
@@ -280,7 +283,7 @@
 
 .about-page, .front-page {
     .site-header {
-        z-index: 3;
+        background-color: transparent;
     }
     max-width: 1500px;
     .site {
@@ -324,14 +327,14 @@
             text-transform: uppercase;
             font-size: 2.1rem;
             text-align: center;
-            max-width: 1120px;
-            margin: 30px 400px;
+            // max-width: 1120px;
+            // margin: 30px 400px;
         }
         
         p {
             text-align: left;
-            max-width: 1120px;
-            margin: 30px 400px;
+            // max-width: 1120px;
+            // margin: 30px 400px;
         }
     
         .widget-area {

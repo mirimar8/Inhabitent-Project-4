@@ -23,24 +23,39 @@
     }
 
     .front-tax-products {
-        img {
-            height: 70px;
-            width: 70px;
-        }
-        .my_term-archive {
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .front-shop-block {
+            border: 1px solid #e1e1e1;
+            border-top-width: 5px;
+            padding: 10px;
+            flex-basis: 23%;
+            padding-bottom: 25px;
             
+            img {
+                height: 70px;
+                width: 70px;
+            }
+
+            p {
+                text-align: center;
+            }
+
             a {
-                // background-color: $color__link;
-                // box-shadow: none;
-                // border-radius: 0;
-                // color: $color__background-body;
-                // padding: 0.75rem 1.5rem;
-                // font-size: 0.9rem;
-                // text-shadow: none;
-                // font-family: Novecento Sans Web,sans-serif;
-                // text-transform: uppercase;
+                background-color: $color__link;
+                box-shadow: none;
+                border-radius: 0;
+                color: $color__background-body;
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+                text-shadow: none;
+                font-family: Novecento Sans Web,sans-serif;
+                text-transform: uppercase; 
             }
         }
+    
     }
     
     .front-journal-posts {

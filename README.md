@@ -4,16 +4,16 @@
 The Inhabitent site is a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. The site uses Wordpress and based on the underscores theme.
 
 
-![screenshot of the website](images/screenshots/front1.png)
-![screenshot of the website](images/screenshots/front2.png)
-![screenshot of the website](images/screenshots/front3.png)
-![screenshot of the website](images/screenshots/shop.png)
-![screenshot of the website](images/screenshots/tax-shop.png)
-![screenshot of the website](images/screenshots/single-shop.png)
-![screenshot of the website](images/screenshots/journal.png)
-![screenshot of the website](images/screenshots/about1.png)
-![screenshot of the website](images/screenshots/about2.png)
-![screenshot of the website](images/screenshots/find-us.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/front1.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/front2.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/front3.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/shop.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/tax-shop.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/single-shop.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/journal.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/about1.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/about2.png)
+![screenshot of the website](themes/Inhabitant-theme/images/screenshots/find-us.png)
 
 ## Technologies Used 
 

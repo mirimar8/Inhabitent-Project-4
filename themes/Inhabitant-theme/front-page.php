@@ -85,7 +85,7 @@ get_header('front-about'); ?>
 					</div><!-- .entry-meta -->
 					<?php endif; ?>
 
-					<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+					<?php the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">',esc_url( get_permalink() ) ),'</a></h3>' ); ?>
 					
 					<div class="buttons-wrapper">
 						<a class="link-button" href=" . <?php echo get_permalink();?> .">READ ENTRY</a>

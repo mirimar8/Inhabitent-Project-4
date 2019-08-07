@@ -46,6 +46,20 @@
                     padding-left: 15px;
                     padding-right: 15px;
                     font-size: 1rem;
+                    // .dotted-line {
+                    //     border-bottom: dotted 2px black;
+                    // }
+                    .entry-title::after {
+                        content: " .......................";
+                        float: right;
+                        white-space: nowrap;
+                        width: 0;
+                        z-index: -1;
+
+                    }
+                    .grid-price {
+                        background-color: white;
+                    }
                 }
             }
         }

@@ -1,6 +1,19 @@
 
 jQuery(document).ready(function ($) {
-    $(".search-toggle").click(function () {
-        $(".search-field").toggle("300");
+
+    const $searchToggle = $('.search-toggle');
+    const $searchField = $('.search-field');
+
+    $searchToggle.click(function () {
+        $searchField.toggle('300');
+        $searchField.focus();
+    });
+
+    $searchField.blur(function () {
+        if ($searchField.val() === '') {
+            $searchField.toggle('300');
+        } else {
+            $searchField.focus();
+        }
     });
 });

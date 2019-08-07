@@ -23,22 +23,3 @@ ehthumbs.db
 # Ignore packages #
 # =============== #
 node_modules/
-
-/*
-!.gitignore
-!plugins/
-!themes/
-!uploads/
-!README.md
-
-plugins/*
-!plugins/inhabitent-functionality
-!plugins/business-hours-widget
-!plugins/inhabitent-blocks-master
-
-themes/*
-!themes/Inhabitant-theme/
-
-themes/Inhabitant-theme/node_modules/
-
-uploads/wp-migrate-db/

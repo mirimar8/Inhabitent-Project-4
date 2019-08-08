@@ -855,15 +855,21 @@ object {
               justify-content: space-between;
       padding-left: 15px;
       padding-right: 15px;
-      font-size: 1rem; }
-      .archive .content-area .products-grid .entry-header .product-info .entry-title::after {
-        content: " .......................";
-        float: right;
+      font-size: 1rem;
+      position: relative; }
+      .archive .content-area .products-grid .entry-header .product-info .grid-price::before {
+        content: "............................";
         white-space: nowrap;
         width: 0;
-        z-index: -1; }
+        z-index: -1;
+        position: absolute;
+        left: 90px; }
+      .archive .content-area .products-grid .entry-header .product-info .entry-title {
+        background-color: white;
+        padding-right: 5px; }
       .archive .content-area .products-grid .entry-header .product-info .grid-price {
-        background-color: white; }
+        background-color: white;
+        padding-left: 5px; }
 
 .tax-product_type .content-area .products-grid {
   grid-template-rows: none; }

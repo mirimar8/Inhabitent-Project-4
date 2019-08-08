@@ -23,6 +23,7 @@
             grid-template-rows: repeat(4,1fr);
             grid-gap: 1.5rem;
             margin-bottom: 1.5rem;
+            
             .hentry {
                 margin: 0;
             }
@@ -30,6 +31,7 @@
             .entry-header {
                 border: 1px solid #e1e1e1;
                 height: 310px;
+
                 a {
                     background-color: $color__background-pre;
 
@@ -46,19 +48,24 @@
                     padding-left: 15px;
                     padding-right: 15px;
                     font-size: 1rem;
-                    // .dotted-line {
-                    //     border-bottom: dotted 2px black;
-                    // }
-                    .entry-title::after {
-                        content: " .......................";
-                        float: right;
+                    position: relative; 
+                
+                    .grid-price::before {
+                        content: "............................";
                         white-space: nowrap;
                         width: 0;
                         z-index: -1;
+                        position: absolute;
+                        left: 90px;
+                    }
 
+                    .entry-title {
+                        background-color: white;
+                        padding-right: 5px;
                     }
                     .grid-price {
                         background-color: white;
+                        padding-left: 5px;
                     }
                 }
             }

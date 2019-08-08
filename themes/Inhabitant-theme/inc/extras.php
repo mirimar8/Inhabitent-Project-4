@@ -37,7 +37,7 @@ function childtheme_custom_login() {
 add_action('login_head', 'childtheme_custom_login');
 
 function the_url( $url ) {
-    return get_bloginfo( 'url' );
+    return home_url();
 }
 add_filter( 'login_headerurl', 'the_url' );
 

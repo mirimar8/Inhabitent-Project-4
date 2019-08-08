@@ -2,7 +2,7 @@
  /**
  *
  * @package   Inhabitent Functionality
- * @author    Miri <your_email@email.com>
+ * @author    Miri mirimarkovitzbl.gmail.com
  * @license   GPL-2.0+
  * @copyright 2015 Your Name or Company
  *

@@ -41,8 +41,6 @@
 
             p {
                 text-align: center;
-                // padding-bottom: 30px;
-                // padding-top: 20px;
             }
 
             a {
@@ -56,6 +54,13 @@
                 font-family: Novecento Sans Web,sans-serif;
                 text-transform: uppercase; 
             }
+
+            a:hover {
+                background-color: $color__button-hover;
+            }
+        }
+        .front-shop-block:hover {
+            border-color: $color__brand-title;
         }
     
     }

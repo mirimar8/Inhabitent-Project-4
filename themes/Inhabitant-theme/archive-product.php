@@ -51,7 +51,6 @@ get_header(); ?>
 
 						<div class="product-info">	
 						<?php the_title( sprintf( '<p class="entry-title">', esc_url( get_permalink() ) ), '</p>' ); ?>
-						<!-- <p class="dotted-line"></p> -->
 						<p class="grid-price"><?php echo CFS()->get( 'price' ); ?></p>
 						</div>
 				

@@ -100,6 +100,9 @@
                 font-family: Novecento Sans Web,sans-serif;
                 text-transform: uppercase;
             }
+            input[type=submit]:hover {
+                background-color: $color__button-hover;
+            }
 
             input {
                 background-color: $color__background-pre;

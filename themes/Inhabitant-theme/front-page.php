@@ -43,7 +43,7 @@ get_header('front-about'); ?>
 					foreach ( $terms as $term ) {?>
 						<div class="front-shop-block">
 
-							<img src=' //localhost:3000/Inhabitant-Project4/wp-content/themes/Inhabitant-theme/images/product-type-icons/<?php echo $tax_images[$i] ?>.svg'>
+							<img src='<?php echo home_url() ?>/wp-content/themes/Inhabitant-theme/images/product-type-icons/<?php echo $tax_images[$i] ?>.svg'>
 							<p><?php echo $term->description ?></p>
 							<a href="<?php echo esc_url( get_term_link($term)); ?>"><?php echo $term->name ?> Stuff</a>
 

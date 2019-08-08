@@ -18,7 +18,7 @@
 						}
 						?>
 						<div class="footer-logo">
-							<a href="//localhost:3000/Inhabitant-Project4/"><img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="inhabitent logo text"></a>
+							<a href="<?php echo home_url() ?>"><img src=" <?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="inhabitent logo text"></a>
 						</div>
 					</div>
 

@@ -773,6 +773,8 @@ object {
       text-shadow: none;
       font-family: Novecento Sans Web,sans-serif;
       text-transform: uppercase; }
+    .site-content .content-area .wpcf7-form input[type=submit]:hover {
+      background-color: #195e59; }
     .site-content .content-area .wpcf7-form input {
       background-color: #eee; }
     .site-content .content-area .wpcf7-form textarea {
@@ -846,30 +848,31 @@ object {
         -o-object-fit: cover;
            object-fit: cover;
         background-color: #eee; }
-    .archive .content-area .products-grid .entry-header .product-info {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      padding-left: 15px;
-      padding-right: 15px;
-      font-size: 1rem;
-      position: relative; }
-      .archive .content-area .products-grid .entry-header .product-info .grid-price::before {
-        content: "............................";
-        white-space: nowrap;
-        width: 0;
-        z-index: -1;
-        position: absolute;
-        left: 90px; }
-      .archive .content-area .products-grid .entry-header .product-info .entry-title {
-        background-color: white;
-        padding-right: 5px; }
-      .archive .content-area .products-grid .entry-header .product-info .grid-price {
-        background-color: white;
-        padding-left: 5px; }
+
+.product-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1rem;
+  position: relative; }
+  .product-info .grid-price::before {
+    content: "............................";
+    white-space: nowrap;
+    width: 0;
+    z-index: -1;
+    position: absolute;
+    left: 90px; }
+  .product-info .entry-title {
+    background-color: white;
+    padding-right: 5px; }
+  .product-info .grid-price {
+    background-color: white;
+    padding-left: 5px; }
 
 .tax-product_type .content-area .products-grid {
   grid-template-rows: none; }
@@ -1001,6 +1004,10 @@ object {
       text-shadow: none;
       font-family: Novecento Sans Web,sans-serif;
       text-transform: uppercase; }
+    .front-page .front-tax-products .front-shop-block a:hover {
+      background-color: #195e59; }
+  .front-page .front-tax-products .front-shop-block:hover {
+    border-color: #d99054; }
 
 .front-page .front-journal-posts {
   display: -webkit-box;
@@ -1118,57 +1125,57 @@ object {
     border: 1px solid #e1e1e1;
     background: #eee; }
 
-.about-page, .front-page {
-  max-width: 1500px; }
-  .about-page .site, .front-page .site {
-    max-width: 1500px;
-    position: relative; }
-  .about-page .site-header, .front-page .site-header {
-    background-color: transparent;
-    position: absolute;
-    border-bottom: none; }
-    .about-page .site-header a, .front-page .site-header a {
-      color: white; }
-    .about-page .site-header a:hover, .front-page .site-header a:hover {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form .search-field, .front-page .site-header .search-form .search-field {
-      color: white; }
-    .about-page .site-header .search-form ::-webkit-input-placeholder, .front-page .site-header .search-form ::-webkit-input-placeholder {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form ::-ms-input-placeholder, .front-page .site-header .search-form ::-ms-input-placeholder {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form ::placeholder, .front-page .site-header .search-form ::placeholder {
-      color: #f3e4c9; }
-    .about-page .site-header .search-form .search-toggle, .front-page .site-header .search-form .search-toggle {
-      color: white; }
-    .about-page .site-header .search-form .search-toggle:hover, .front-page .site-header .search-form .search-toggle:hover {
-      color: #f3e4c9; }
-  .about-page .site-content, .front-page .site-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 0; }
-    .about-page .site-content .entry-header, .front-page .site-content .entry-header {
-      display: none; }
-    .about-page .site-content .entry-content, .front-page .site-content .entry-content {
-      margin: 0; }
-      .about-page .site-content .entry-content .hero-image-header, .front-page .site-content .entry-content .hero-image-header {
-        width: 100%;
-        height: 100vh; }
-        .about-page .site-content .entry-content .hero-image-header .entry-title, .front-page .site-content .entry-content .hero-image-header .entry-title {
-          color: #fff;
-          font-size: 3rem;
-          text-align: center;
-          text-transform: uppercase; }
-    .about-page .site-content h2, .front-page .site-content h2 {
-      color: #2f1339;
-      text-transform: uppercase;
-      font-size: 2.1rem;
-      text-align: center; }
-    .about-page .site-content p, .front-page .site-content p {
-      text-align: left;
-      max-width: 800px;
-      margin: 20px auto; }
-    .about-page .site-content .widget-area, .front-page .site-content .widget-area {
-      display: none; }
+.about-page .site, .front-page .site {
+  max-width: 1500px;
+  position: relative; }
+
+.about-page .site-header, .front-page .site-header {
+  background-color: transparent;
+  position: absolute;
+  border-bottom: none; }
+  .about-page .site-header a, .front-page .site-header a {
+    color: white; }
+  .about-page .site-header a:hover, .front-page .site-header a:hover {
+    color: #f3e4c9; }
+  .about-page .site-header .search-form .search-field, .front-page .site-header .search-form .search-field {
+    color: white; }
+  .about-page .site-header .search-form ::-webkit-input-placeholder, .front-page .site-header .search-form ::-webkit-input-placeholder {
+    color: #f3e4c9; }
+  .about-page .site-header .search-form ::-ms-input-placeholder, .front-page .site-header .search-form ::-ms-input-placeholder {
+    color: #f3e4c9; }
+  .about-page .site-header .search-form ::placeholder, .front-page .site-header .search-form ::placeholder {
+    color: #f3e4c9; }
+  .about-page .site-header .search-form .search-toggle, .front-page .site-header .search-form .search-toggle {
+    color: white; }
+  .about-page .site-header .search-form .search-toggle:hover, .front-page .site-header .search-form .search-toggle:hover {
+    color: #f3e4c9; }
+
+.about-page .site-content, .front-page .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0; }
+  .about-page .site-content .entry-header, .front-page .site-content .entry-header {
+    display: none; }
+  .about-page .site-content .entry-content, .front-page .site-content .entry-content {
+    margin: 0; }
+    .about-page .site-content .entry-content .hero-image-header, .front-page .site-content .entry-content .hero-image-header {
+      width: 100%;
+      height: 100vh; }
+      .about-page .site-content .entry-content .hero-image-header .entry-title, .front-page .site-content .entry-content .hero-image-header .entry-title {
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase; }
+  .about-page .site-content h2, .front-page .site-content h2 {
+    color: #2f1339;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    text-align: center; }
+  .about-page .site-content p, .front-page .site-content p {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto; }
+  .about-page .site-content .widget-area, .front-page .site-content .widget-area {
+    display: none; }

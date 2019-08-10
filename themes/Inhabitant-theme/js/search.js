@@ -1,8 +1,8 @@
 
 jQuery(document).ready(function ($) {
 
-    const $searchToggle = $('.search-toggle');
-    const $searchField = $('.search-field');
+    const $searchToggle = $('.main-navigation .search-toggle');
+    const $searchField = $('.main-navigation .search-field');
 
     $searchToggle.click(function () {
         $searchField.toggle('300');

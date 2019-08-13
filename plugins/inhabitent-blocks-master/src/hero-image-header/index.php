@@ -11,7 +11,7 @@ function inhabitent_blocks_cgb_hero_image_block_render($attributes) {
 
     $hero_image = wp_get_attachment_url($attributes['imgID']);
     $markup = "<header class='entry-header hero-image-header' style='
-      background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$hero_image}) no-repeat center bottom; 
+      background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url({$hero_image}) no-repeat center top; 
       background-size: cover, cover;
       display: flex;
       align-items: center;
